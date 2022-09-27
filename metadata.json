@@ -1,0 +1,19 @@
+{
+  "icon": "docker.svg",
+  "vm": {
+    "composefile": "docker-compose.yaml",
+    "exposes": {
+      "socket": "extension-disk_space.sock"
+    }
+  },
+  "ui": {
+    "dashboard-tab": {
+      "title": "Disk_space",
+      "src": "index.html",
+      "root": "ui",
+      "backend": {
+        "socket": "extension-disk_space.sock"
+      }
+    }
+  }
+}
